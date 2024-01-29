@@ -22,10 +22,11 @@ After running this command, Livewire will create two new files in your applicati
 namespace App\Livewire;
 
 use Livewire\Component;
+use Illuminate\View\View;
 
 class CreatePost extends Component
 {
-	public function render()
+	public function render(): View
 	{
 		return view('livewire.create-post');
 	}
@@ -60,7 +61,7 @@ use Livewire\Component;
 
 class CreatePost extends Component
 {
-	public function render()
+	public function render(): string
 	{
 		return <<<'HTML' // [tl! highlight:4]
 		<div>
